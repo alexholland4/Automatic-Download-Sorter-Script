@@ -1,4 +1,16 @@
-# Automatic Download Sorter Script
+###################################################################
+# 
+# Project: Automatic Download Sorter Script
+# Author: Alexander Holland
+# Date: 7/27/2023
+#
+###################################################################
+# 
+# For notes on how to use the script, please visit:
+# https://github.com/alexholland4/Automatic-Download-Sorter-Script/
+#
+###################################################################
+
 
 import os
 import shutil
@@ -31,13 +43,14 @@ def move_files(source_directory, dest_directory, file):
     print()
 
 
+# main loop that runs and moves files continuously 
 while True:
     # Directory to move files from
-    source_directory = ""  # CHANGE TO YOUR SOURCE DIRECTORY. I.E. C:/Users/username/Downloads
+    source_directory = ""  # CHANGE TO YOUR SOURCE DIRECTORY WITH NO ENDING / . I.E. C:/Users/username/Downloads
 
     #  Directories where files will end up
-    pdf_directory = ""  # CHANGE TO YOUR PDF DESTINATION DIRECTORY. I.E. C:/Users/username/Documents/PDF Downloads
-    pic_directory = ""  # CHANGE TO YOUR PDF DESTINATION DIRECTORY. I.E. C:/Users/username/Pictures/Saved Pictures
+    pdf_directory = ""  # CHANGE TO YOUR PDF DESTINATION DIRECTORY WITH NO ENDING / . I.E. C:/Users/username/Documents/PDF Downloads
+    pic_directory = ""  # CHANGE TO YOUR PDF DESTINATION DIRECTORY WITH NO ENDING / . I.E. C:/Users/username/Pictures/Saved Pictures
 
     # Loop through each file in target directory
     for file in get_files(source_directory):
